@@ -1,0 +1,88 @@
+/*mobile < 667px make sure 320px works*/
+@media (max-width: 666px) {
+  body {
+    margin: 0;
+  }
+
+  header {
+    display: none;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 0.5fr) repeat(4, 0.3fr);
+    gap: 0;
+    margin: 0;
+  }
+
+  .hero {
+    grid-column: span 1;
+  }
+
+  .video {
+    border-radius: 0;
+  }
+
+  .item-text {
+    margin: 0;
+    height: 110%;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  img {
+    border-radius: 0;
+  }
+
+  .img-body-a {
+    display: none;
+  }
+
+  .img-x {
+    grid-row: span 1;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    height: 500px;
+  }
+
+  .text-jack,
+  .text-news,
+  .text-wide,
+  .text-sandwich {
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+
+  .text-news {
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .text-wide {
+    grid-column: span 1;
+    justify-content: flex-end;
+    height: 100%;
+  }
+
+  .keep {
+    grid-column: span 1;
+    border-radius: 0;
+    height: 250px;
+  }
+
+  .foot {
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+    align-items: center;
+  }
+}

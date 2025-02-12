@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <link
+    rel="stylesheet"
+    href="default-styles.css"
+  >
+  <link
+    rel="stylesheet"
+    href="small-desktop-styles.css"
+  />
+  <link
+    rel="stylesheet"
+    href="tablet-styles.css"
+  />
+  <link
+    rel="stylesheet"
+    href="mobile-styles.css"
+  />
+  <!--
+  <link
+    rel="stylesheet"
+    href="mobile-landscape-styles.css"
+  />
+  -->
+  <!--Links to font from googleapis-->
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Merienda:wght@300..900&display=swap"
+    rel="stylesheet"
+  >
+  <title>js-project-business-site</title>
+</head>
+
+<!--most child elements are flex, also header and footer
+main body, container, is a grid-->
+
+<body>
+  <section class="loader">
+    <figure class="spinner">
+      </div>
+  </section>
+  <header>
+    <article class="title">
+      <h1>
+        <bold>Whiskey.inc</bold>
+      </h1>
+    </article>
+    <nav class="flex-parent">
+      <a
+        class="flex-child"
+        src="#"
+      >News</a>
+      <p>┇</p>
+      <a
+        class="flex-child"
+        src="#"
+      >Reviews</a>
+      <p>┇</p>
+      <a
+        class="flex-child"
+        src="#"
+      >Spirits</a>
+    </nav>
+    <nav
+      onclick="hamFunction()"
+      id="hidden-ham"
+      class="hidden-ham-properties"
+    >
+      <div
+        id="bar-one"
+        class="all-bar"
+      ></div>
+      <div
+        id="bar-two"
+        class="all-bar"
+      ></div>
+      <div
+        id="bar-three"
+        class="all-bar"
+      ></div>
+    </nav>
+  </header>
+  <nav id="dropdown">
+    <div></div>
+    <div></div>
+    <div></div>
+  </nav>
+  <section class="container">
+    <figure class="hero">
+      <video
+        class="video"
+        autoplay
+        muted
+        loop
+      >
+        <source
+          src="./vid/glass.mp4"
+          type="video/mp4"
+        >
+      </video>
+    </figure>
+    <!--
+    <figure class="item-img img-top">
+      <img class="min-img" src="img/img2.jpg">
+    </figure>
+    <figure class="item-img img-top">
+      <img class="min-img" src="img/img1.jpg">
+    </figure>
+    <figure class="item-img img-top">
+      <img class="min-img" src="img/img3.jpg">
+    </figure>
+    -->
+    <figure class="item-img img-body-a">
+      <img
+        class="min-img"
+        src="img/img4.jpg"
+      >
+    </figure>
+    <article class="item-text text-jack">
+      <h2>Ol' Jack</h2>
+      <p>
+        Jack Daniel’s Tennessee Whiskey is charcoal-mellowed for a smooth, rich taste with hints of caramel,
+        vanilla,
+        and toasted oak. Perfect neat, on the rocks, or in a cocktail, it delivers bold character with every sip.
+        With
+        over 150 years of craftsmanship, Jack Daniel’s isn’t just whiskey—it’s a legend in a bottle.
+      </p>
+    </article>
+    <article class="item-text text-news">
+      <h2>Recent news!</h2>
+      <p>
+        In Scotland, two rugby players, Duhan van Der Merwe and Pierre Schoeman, have founded the whisky brand
+        Hirundine, which has secured a significant contract to be supplied in 21 Buzzworks venues.
+      </p>
+    </article>
+    <figure class="item-img img-x">
+      <img src="img/img5.jpg">
+    </figure>
+    <article class="item-text text-wide">
+      <h2>Bullseye</h2>
+      <p>
+        Maker’s Mark is a handcrafted Kentucky bourbon that stands out with its smooth, rich flavor and signature
+        red
+        wax seal. Unlike most bourbons, it’s made with soft red winter wheat instead of rye, giving it a sweeter,
+        more
+        approachable taste. Every batch is carefully aged to taste, not time, ensuring consistent quality in every
+        bottle. The result is a velvety-smooth whiskey with notes of caramel, vanilla, and warm oak, perfect for
+        sipping
+        neat or mixing into classic cocktails.
+
+        Crafted in small batches at the Maker’s Mark Distillery in Loretto, Kentucky, this bourbon is still produced
+        the
+        old-fashioned way. Each bottle is hand-dipped in wax, making every one unique and instantly recognizable.
+        The
+        attention to detail doesn’t stop there—the limestone-filtered water and carefully charred oak barrels
+        enhance
+        its complexity. Whether you’re a seasoned whiskey lover or just starting out, Maker’s Mark is incredibly
+        easy to
+        enjoy.
+      </p>
+    </article>
+    <div class="keep">
+      <figure class="item-imgex img-y">
+        <img
+          class="min-img"
+          src="img/img7.jpg"
+        >
+      </figure>
+    </div>
+    <article class="item-text text-sandwich">
+      <h2>Lorem 1</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+        est
+        laborum.
+      </p>
+    </article>
+    <article class="item-text text-sandwich">
+      <h2>Lorem 2</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+        est
+        laborum.
+      </p>
+    </article>
+    <article class="item-text text-sandwich">
+      <h2>lorem 3</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+        est
+        laborum.
+      </p>
+    </article>
+  </section>
+  <footer>
+    <article class="foot">
+      <h2>Well-hidden footer message</h2>
+    </article>
+    <nav class="flex-parent-two">
+      <a
+        class="flex-child-two"
+        src="#"
+      >
+        <img
+          class="logo"
+          src="img/faceb.png"
+        >
+      </a>
+      <p>┇</p>
+      <a
+        class="flex-child-two"
+        src="#"
+      >
+        <img
+          class="logo"
+          src="img/insta.png"
+        >
+      </a>
+      <p>┇</p>
+      <a
+        class="flex-child-two"
+        src="#"
+      >
+        <img
+          class="logo"
+          src="img/tiktok.png"
+        >
+      </a>
+    </nav>
+  </footer>
+  <script src="file.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"
+  ></script>
+</body>
+
+</html>

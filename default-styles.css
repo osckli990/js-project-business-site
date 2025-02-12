@@ -1,0 +1,282 @@
+/*default with > 1400px*/
+
+html,
+body {
+  margin: 0 auto;
+  font-family: "Merienda", serif;
+  font-optical-sizing: auto;
+  padding: 0;
+}
+
+/*font optical sizing help readability when chaning font size. included with google font*/
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  animation: load 0.5s linear 2s;
+  animation-fill-mode: forwards;
+  height: 100%;
+}
+
+/*z-index specifies seen order, behind or infront of objects.
+animation defines name, duration, timing-function, and delay. 
+Fill-mode changes to css affected by animation becomes permanent until reloaded
+"vh" stands for viewport height and is a percentage*/
+
+.spinner {
+  display: fixed;
+  position: fixed;
+  top: auto;
+  left: auto;
+  z-index: 5;
+  height: 120px;
+  width: 120px;
+  border: 6px solid;
+  border-color: white transparent white transparent;
+  border-radius: 50%;
+  animation: spin 1.5s ease infinite, load 0.5 linear 2s;
+  animation-fill-mode: forwards;
+}
+
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  height: 120px;
+  width: 100%;
+  background-color: #f58d42;
+  z-index: 3;
+  justify-content: space-between;
+}
+
+/*fixed position to stay on top of screen*/
+
+.title {
+  display: flex;
+  margin-left: 3%;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.hidden-ham-properties {
+  display: none;
+}
+
+#dropdown {
+  top: 100px;
+  position: fixed;
+  z-index: 2;
+  right: -650px;
+  height: 100vh;
+  width: 600px;
+  background-color: #CE7739;
+  overflow: hidden;
+  transition: 0.25s linear;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+}
+
+.all-bar {
+  display: none;
+}
+
+.flex-parent {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-right: 3%;
+}
+
+.flex-child {
+  text-decoration: none;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.flex-child:hover {
+  margin-top: 15px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr 1fr repeat(3, 1fr);
+  gap: 2.5%;
+  margin: 115px 5% 8% 5%;
+  justify-items: center;
+  align-items: center;
+  z-index: 2;
+  background-color: white;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  grid-column: span 3;
+}
+
+.video {
+  min-width: 500px;
+  height: auto;
+  width: 100%;
+  border-radius: 0 0 8px 8px;
+}
+
+.item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.item-imgex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.item-text {
+  margin: 0;
+  height: 100%;
+}
+
+.text-jack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.text-news {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.text-news p {
+  text-align: end;
+}
+
+img {
+  flex-shrink: 0;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
+
+.min-img {
+  min-width: 200px;
+}
+
+/*minimum width to certain images*/
+
+.img-x {
+  grid-row: span 2;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+/*span two rows*/
+
+.keep {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 8px;
+  height: 99%;
+}
+
+.img-y {
+  max-width: 45%;
+  max-height: 45%;
+}
+
+.text-wide {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 300px;
+}
+
+footer {
+  display: flex;
+  background-color: #f58d42;
+  height: 120px;
+  justify-content: space-between;
+  min-width: 500px;
+}
+
+.foot {
+  display: flex;
+  margin-left: 3%;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-parent-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-right: 3%;
+}
+
+.flex-child-two {
+  text-decoration: none;
+}
+
+.logo {
+  margin-top: 5px;
+  width: 30px;
+  height: auto;
+  flex-shrink: 0;
+  max-width: 100%;
+  max-height: 100%;
+  transition: 0.25s;
+}
+
+.flex-child-two:hover {
+  .logo {
+    margin-top: 15px;
+  }
+}
+
+@keyframes spin {
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes load {
+  to {
+    display: none;
+  }
+}
+
+/*keyframes for the starting animations. "load" being the large background*/
