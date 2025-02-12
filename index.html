@@ -74,7 +74,7 @@ main body, container, is a grid-->
       <a
         class="flex-child"
         src="#"
-      >Spirits</a>
+      >Order</a>
     </nav>
     <nav
       onclick="hamFunction()"
@@ -95,10 +95,123 @@ main body, container, is a grid-->
       ></div>
     </nav>
   </header>
-  <nav id="dropdown">
-    <div></div>
-    <div></div>
-    <div></div>
+  <nav
+    id="dropdown"
+    class="dropdown-content"
+  >
+    <nav>
+      <a>News</a>
+      <a>Reviews</a>
+    </nav>
+    <h3>Subscribe to digital newsletter!</h3>
+    <form
+      action="https://httpbin.org/anything"
+      method="post"
+    >
+      <div class="form-input">
+        <label
+          class="email"
+          for="email"
+        >
+          Email
+
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@gmail.com"
+          required
+        >
+      </div>
+      <div class="form-input">
+        <label
+          class="type"
+          for="type-one"
+        >
+          Whisky
+        </label>
+        <input
+          type="checkbox"
+          id="type-one"
+          name="type-one"
+          value="whisky"
+        >
+        <label
+          class="type"
+          for="type-two"
+        >
+          Bourbon
+        </label>
+        <input
+          type="checkbox"
+          id="type-two"
+          name="type-two"
+          value="bourbon"
+        >
+        <label
+          class="type"
+          for="type-three"
+        >
+          Scotch
+        </label>
+        <input
+          type="checkbox"
+          id="type-three"
+          name="type-three"
+          value="scotch"
+        >
+      </div>
+      <div class="form-input">
+        <label
+          class="frequency"
+          for="frequency"
+        >
+          Frequency
+
+        </label>
+        <select
+          name="frequency"
+          id="frequency"
+          value="week"
+          required
+        >
+          <option value="week">Weekly</option>
+          <option value="month">Montly</oprion>
+          <option value="year">Yearly</option>
+        </select>
+      </div>
+      <div class="form-input">
+        <label
+          class="amount"
+          for="amount"
+        >
+          Amount
+
+        </label>
+        <select
+          name="amount"
+          id="amount"
+          value="one"
+          required
+        >
+          <option value="week">1</option>
+          <option value="two">2</oprion>
+          <option value="three">3</option>
+          <option value="four">4</option>
+          <option value="five">5</oprion>
+        </select>
+      </div>
+      <button
+        class="order"
+        type="submit"
+      >
+        Order
+      </button>
+      <p>
+        Orders will be supplied the last weekday of every month
+      </p>
+    </form>
   </nav>
   <section class="container">
     <figure class="hero">
