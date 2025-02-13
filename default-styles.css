@@ -1,6 +1,4 @@
 /*default with > 1400px*/
-
-html,
 body {
   margin: 0 auto;
   font-family: "Merienda", serif;
@@ -132,7 +130,6 @@ h1 {
 }
 
 .video {
-  min-width: 500px;
   height: auto;
   width: 100%;
   border-radius: 0 0 8px 8px;
@@ -229,7 +226,6 @@ footer {
   background-color: #f58d42;
   height: 120px;
   justify-content: space-between;
-  min-width: 500px;
 }
 
 .foot {

@@ -99,11 +99,11 @@ main body, container, is a grid-->
     id="dropdown"
     class="dropdown-content"
   >
-    <nav>
+    <nav class="links-parent">
       <a>News</a>
       <a>Reviews</a>
     </nav>
-    <h3>Subscribe to digital newsletter!</h3>
+    <h3>Subscribe to our digital newsletter!</h3>
     <form
       action="https://httpbin.org/anything"
       method="post"
@@ -132,10 +132,11 @@ main body, container, is a grid-->
           Whisky
         </label>
         <input
-          type="checkbox"
+          type="radio"
           id="type-one"
-          name="type-one"
+          name="type"
           value="whisky"
+          required
         >
         <label
           class="type"
@@ -144,9 +145,9 @@ main body, container, is a grid-->
           Bourbon
         </label>
         <input
-          type="checkbox"
+          type="radio"
           id="type-two"
-          name="type-two"
+          name="type"
           value="bourbon"
         >
         <label
@@ -156,9 +157,9 @@ main body, container, is a grid-->
           Scotch
         </label>
         <input
-          type="checkbox"
+          type="radio"
           id="type-three"
-          name="type-three"
+          name="type"
           value="scotch"
         >
       </div>
@@ -208,9 +209,6 @@ main body, container, is a grid-->
       >
         Order
       </button>
-      <p>
-        Orders will be supplied the last weekday of every month
-      </p>
     </form>
   </nav>
   <section class="container">
