@@ -43,6 +43,11 @@
     href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Merienda:wght@300..900&display=swap"
     rel="stylesheet"
   >
+  <script
+    defer
+    src="file.js"
+  ></script>
+  <!--"defer" keyword makes sure DOM is ready when the script runs-->
   <title>js-project-business-site</title>
 </head>
 
@@ -52,7 +57,7 @@ main body, container, is a grid-->
 <body>
   <section class="loader">
     <figure class="spinner">
-      </div>
+    </figure>
   </section>
   <header>
     <article class="title">
@@ -108,6 +113,7 @@ main body, container, is a grid-->
       action="https://httpbin.org/anything"
       method="post"
       class="form-parent"
+      id="form"
     >
       <div class="form-input">
         <label
@@ -119,7 +125,7 @@ main body, container, is a grid-->
       </div>
       <div class="form-input email-pos">
         <input
-          type="email"
+          type="text"
           id="email"
           name="email"
           placeholder="example@gmail.com"
@@ -208,7 +214,7 @@ main body, container, is a grid-->
           type="select"
           required
         >
-          <option value="week">1</option>
+          <option value="one">1</option>
           <option value="two">2</oprion>
           <option value="three">3</option>
           <option value="four">4</option>
@@ -375,12 +381,6 @@ main body, container, is a grid-->
       </a>
     </nav>
   </footer>
-  <script src="file.js"></script>
-  <script
-    src="https://code.jquery.com/jquery-3.7.1.js"
-    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-    crossorigin="anonymous"
-  ></script>
 </body>
 
 </html>
