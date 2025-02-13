@@ -95,7 +95,7 @@ main body, container, is a grid-->
       ></div>
     </nav>
   </header>
-  <nav
+  <aside
     id="dropdown"
     class="dropdown-content"
   >
@@ -103,10 +103,11 @@ main body, container, is a grid-->
       <a>News</a>
       <a>Reviews</a>
     </nav>
-    <h3>Subscribe to our digital newsletter!</h3>
+    <h3>Subscribe to our <u>digital</u> newsletter!</h3>
     <form
       action="https://httpbin.org/anything"
       method="post"
+      class="form-parent"
     >
       <div class="form-input">
         <label
@@ -114,8 +115,9 @@ main body, container, is a grid-->
           for="email"
         >
           Email
-
         </label>
+      </div>
+      <div class="form-input email-pos">
         <input
           type="email"
           id="email"
@@ -124,7 +126,7 @@ main body, container, is a grid-->
           required
         >
       </div>
-      <div class="form-input">
+      <div class="form-input type-pos">
         <label
           class="type"
           for="type-one"
@@ -138,6 +140,8 @@ main body, container, is a grid-->
           value="whisky"
           required
         >
+      </div>
+      <div class="form-input type-pos">
         <label
           class="type"
           for="type-two"
@@ -150,6 +154,8 @@ main body, container, is a grid-->
           name="type"
           value="bourbon"
         >
+      </div>
+      <div class="form-input type-pos">
         <label
           class="type"
           for="type-three"
@@ -171,10 +177,13 @@ main body, container, is a grid-->
           Frequency
 
         </label>
+      </div>
+      <div class="form-input frequency-pos">
         <select
           name="frequency"
           id="frequency"
           value="week"
+          type="select"
           required
         >
           <option value="week">Weekly</option>
@@ -190,10 +199,13 @@ main body, container, is a grid-->
           Amount
 
         </label>
+      </div>
+      <div class="form-input amount-pos">
         <select
           name="amount"
           id="amount"
           value="one"
+          type="select"
           required
         >
           <option value="week">1</option>
@@ -203,14 +215,16 @@ main body, container, is a grid-->
           <option value="five">5</oprion>
         </select>
       </div>
-      <button
-        class="order"
-        type="submit"
-      >
-        Order
-      </button>
+      <div class="order-parent">
+        <button
+          class="order"
+          type="submit"
+        >
+          Order
+        </button>
+      </div>
     </form>
-  </nav>
+  </aside>
   <section class="container">
     <figure class="hero">
       <video

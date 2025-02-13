@@ -77,12 +77,132 @@ h1 {
   position: fixed;
   z-index: 2;
   right: -650px;
-  height: 100vh;
+  height: 90vh;
   width: 400px;
   background-color: #CE7739;
   overflow: hidden;
   transition: 0.25s linear;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+}
+
+
+.dropdown-content {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 0.1fr 1fr;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.dropdown-content h3 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.links-parent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.links-parent a {
+  text-decoration: none;
+  padding: 0 40px 0 40px;
+  transition: 0.25s linear;
+  margin: 10px 0 10px 0;
+}
+
+.links-parent a:hover {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.form-parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 5fr;
+}
+
+.form-input {
+  margin: 10px 0 10px 0;
+  padding: 0 20px 0 20px;
+  font-size: 16px;
+}
+
+input[type=email]:focus {
+  box-shadow: 0 0 4px white;
+  outline: none;
+}
+
+.email-pos {
+  grid-column: span 2;
+}
+
+#email {
+  font-size: 16px;
+  border-color: white;
+  width: 100%;
+  border-radius: 3px;
+}
+
+#type-one,
+#type-two,
+#type-three {
+  border-color: white;
+}
+
+.type-pos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.frequency-pos {
+  grid-column: span 2;
+}
+
+#frequency {
+  border-color: white;
+  width: 100%;
+  appearance: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+#amount {
+  border-color: white;
+  outline: none;
+  appearance: none;
+  width: 35px;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.amount-pos {
+  grid-column: span 2;
+}
+
+.order-parent {
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order {
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 4px black;
+  box-shadow: 0 0 5px black;
 }
 
 .all-bar {

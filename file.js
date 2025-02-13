@@ -8,3 +8,8 @@ function hamFunction() {
   document.getElementById("bar-two").classList.toggle("change");
   document.getElementById("bar-three").classList.toggle("change");
 }
+
+
+
+
+//ADD VALIDATION FOR FORM, ADD DARKMODE/LIGHTMODE
