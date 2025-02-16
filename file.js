@@ -40,16 +40,25 @@ document.getElementById("hidden-ham").onclick = function () { hamFunction() };
 /* hamscript toggles between adding and removing the show class, which is used to hide and show the dropdown content */
 function hamFunction() {
   document.getElementById("dropdown").classList.toggle("show");
-  document.getElementById("bar-one").classList.toggle("change");
-  document.getElementById("bar-two").classList.toggle("change");
-  document.getElementById("bar-three").classList.toggle("change");
+  ["bar-one", "bar-two", "bar-three"].forEach(id =>
+    document.getElementById(id).classList.toggle("change")
+  );
 }
 
+/*
+here is chatGPT's version of part of my code, which is don't understand lmao
+
+document.getElementById("hidden-ham").addEventListener("click", function () {
+  document.getElementById("dropdown").classList.toggle("show");
+  ["bar-one", "bar-two", "bar-three"].forEach(id =>
+    document.getElementById(id).classList.toggle("change")
+  );
+});
+*/
 
 
 
 
 
 
-
-//ADD DARKMODE/LIGHTMODE, make hamburger responsive, make site prettier
+//ADD DARKMODE/LIGHTMODE
