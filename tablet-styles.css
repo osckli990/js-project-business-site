@@ -38,7 +38,7 @@
 
   .show {
     transition: .25s linear;
-    transform: translateX(-650px);
+    right: 0;
   }
 
   .container {

@@ -1,7 +1,7 @@
 //declaring variables. (with a constant?)
 const email = document.getElementById("email");
 const form = document.getElementById('form');
-const correct = false
+let correct = false
 
 //add a listener to prevent default submit before validation
 form.addEventListener("submit", event => {
@@ -11,10 +11,6 @@ form.addEventListener("submit", event => {
   if (correct === false) {
     event.preventDefault();
   }
-  else {
-    NaN;
-  }
-
 });
 
 //checks for valid email adress using const i found. Returns email i lowercase
@@ -30,7 +26,7 @@ const validateInputs = () => {
   const emailValue = email.value.trim();
 
   if (!isValidEmail(emailValue)) {
-    alert("not valid");
+    alert("not a valid email adress");
   }
 
   else {
@@ -56,4 +52,4 @@ function hamFunction() {
 
 
 
-//ADD VALIDATION FOR FORM, ADD DARKMODE/LIGHTMODE
+//ADD DARKMODE/LIGHTMODE, make hamburger responsive, make site prettier
