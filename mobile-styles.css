@@ -68,6 +68,7 @@
   #frequency,
   #amount {
     font-size: 14px;
+    height: 30px;
   }
 
 
@@ -111,6 +112,15 @@
 
   .img-body-a {
     display: none;
+  }
+
+  .darkmode .item-img {
+    border-radius: 8px;
+    box-shadow: 0 0 20px white;
+  }
+
+  .darkmode .img-x img {
+    box-shadow: none;
   }
 
   .img-x {

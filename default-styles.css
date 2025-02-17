@@ -55,6 +55,7 @@ header {
   z-index: 3;
   justify-content: space-between;
   align-items: center;
+  transition: 0.2s linear;
 }
 
 #theme-switch {
@@ -88,6 +89,10 @@ header {
   color: white;
 }
 
+.darkmode header {
+  background-color: #E96100;
+}
+
 .darkmode header #theme-switch svg:first-child {
   display: none;
 }
@@ -101,8 +106,6 @@ header {
   fill: white;
 }
 
-.darkmode header {}
-
 .darkmode .dropdown-content {
   background-color: black;
   color: white;
@@ -110,21 +113,34 @@ header {
 }
 
 .darkmode input[type=text]:focus {
-  box-shadow: 0 0 4px white;
+  box-shadow: 0 0 8px white;
 }
 
 .darkmode .dropdown-content a {
   transition: 0.2s linear;
 }
 
-.darkmode .dropdown-content a:hover {}
+.darkmode .dropdown-content .links-parent a:hover {
+  color: #E96100;
+}
+
+.darkmode .order {
+  box-shadow: 0 0 10px white;
+}
 
 .darkmode .hero {
-  box-shadow: 0 5px 20px white;
+  box-shadow: 0 0px 20px white;
   border-radius: 8px;
 }
 
-.darkmode footer {}
+.darkmode .item-img {
+  box-shadow: 0 0px 20px white;
+  border-radius: 8px;
+}
+
+.darkmode footer {
+  background-color: #E96100;
+}
 
 /*fixed position to stay on top of screen*/
 .title {
@@ -189,6 +205,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 5fr;
+  align-items: center;
 }
 
 .form-input {
@@ -271,6 +288,7 @@ input[type=text]:focus {
   cursor: pointer;
   border: 4px black;
   box-shadow: 0 0 5px black;
+  transition: 0.2s linear;
 }
 
 .all-bar {
@@ -279,7 +297,6 @@ input[type=text]:focus {
 
 .flex-parent {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   gap: 5px;
@@ -288,12 +305,12 @@ input[type=text]:focus {
 
 .flex-child {
   text-decoration: none;
-  transition: 0.25s;
+  transition: 0.20s;
   cursor: pointer;
 }
 
 .flex-child:hover {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .container {
@@ -301,7 +318,7 @@ input[type=text]:focus {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 2fr 1fr repeat(3, 1fr);
   gap: 2.5%;
-  margin: 115px 5% 8% 5%;
+  margin: 115px 5% 2% 5%;
   justify-items: center;
   align-items: center;
   z-index: 2;
@@ -415,6 +432,7 @@ footer {
   background-color: #f58d42;
   height: 120px;
   justify-content: space-between;
+  transition: 0.2 linear;
 }
 
 .foot {

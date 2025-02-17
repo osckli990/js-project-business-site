@@ -11,7 +11,7 @@ form.addEventListener("submit", event => {
 
 });
 
-//checks for valid email adress using const i found. Returns email i lowercase
+//checks for valid email adress using const i found. Returns email in lowercase
 const isValidEmail = email => {
 
   const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
