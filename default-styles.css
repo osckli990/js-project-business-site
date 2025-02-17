@@ -55,11 +55,39 @@ header {
   justify-content: space-between;
 }
 
+#theme-switch {
+  height: 100%;
+  width: 50px;
+  padding: 0;
+  margin-left: 3%;
+  border-radius: 50%;
+  background-color: #f58d42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+}
+
+#theme-switch svg {
+  fill: white;
+}
+
+#theme-switch svg:last-child {
+  display: none;
+}
+
+.darkmode svg:first-child {
+  display: none;
+}
+
+.darkmode svg:last-child {
+  display: block;
+}
+
 /*fixed position to stay on top of screen*/
 
 .title {
   display: flex;
-  margin-left: 3%;
   justify-content: center;
   align-items: center;
 }
