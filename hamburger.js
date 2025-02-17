@@ -22,10 +22,3 @@ document.getElementById("hidden-ham").addEventListener("click", function () {
     document.getElementById(id).classList.toggle("change")
   );
 });
-
-
-
-
-
-
-//ADD DARKMODE/LIGHTMODE. DISABLE SCROLLING DURING START ANIMATION

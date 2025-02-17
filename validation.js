@@ -11,10 +11,12 @@ form.addEventListener("submit", event => {
 
 });
 
-//checks for valid email adress using const i found. Returns email in lowercase
+//checks for valid email adress using const i found. Returns email in lowercase. trying to understand it through this: https://en.wikipedia.org/wiki/Regular_expression
+//even with this you can still use dummy emails like "abc@abc.abc"
 const isValidEmail = email => {
 
   const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
   return re.test(String(email).toLowerCase());
 };
 
