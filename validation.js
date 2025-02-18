@@ -1,4 +1,4 @@
-//declaring variables. (with a constant?)
+//declaring variables
 const email = document.getElementById("email");
 const form = document.getElementById('form');
 

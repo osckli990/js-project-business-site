@@ -17,3 +17,6 @@ themeSwitch.addEventListener("click", () => {
     localStorage.setItem("darkmode", "inactive");
   }
 });
+
+
+//remember console.log
