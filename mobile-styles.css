@@ -1,6 +1,10 @@
 /*repeating code because of starting responsive code from desktop*/
 /*mobile < 667px make sure 320px works*/
 @media (max-width: 666px) {
+  .dropdown-content-main {
+    display: none;
+  }
+
   header {
     height: 80px;
   }

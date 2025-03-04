@@ -38,4 +38,18 @@
     justify-content: flex-end;
     height: 300px;
   }
+
+  .dropdown-content-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .dropdown-content-main h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
 }

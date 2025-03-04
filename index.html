@@ -382,6 +382,130 @@ container, as well as dropdown, is a grid-->
         category. A fantastic go-to whisky for any occasion!
       </p>
     </article>
+    <div class="dropdown-content-main">
+      <h3>Subscribe to our <u>digital</u> newsletter!</h3>
+      <form
+        action="https://httpbin.org/anything"
+        method="post"
+        class="form-parent dissappear"
+        id="form"
+      >
+        <div class="form-input">
+          <label
+            class="email"
+            for="email"
+          >
+            Email
+          </label>
+        </div>
+        <div class="form-input email-pos">
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+            required
+          >
+        </div>
+        <div class="form-input type-pos">
+          <label
+            class="type"
+            for="type-one"
+          >
+            Whisky
+          </label>
+          <input
+            type="radio"
+            id="type-one"
+            name="type"
+            value="whisky"
+            required
+          >
+        </div>
+        <div class="form-input type-pos">
+          <label
+            class="type"
+            for="type-two"
+          >
+            Bourbon
+          </label>
+          <input
+            type="radio"
+            id="type-two"
+            name="type"
+            value="bourbon"
+          >
+        </div>
+        <div class="form-input type-pos">
+          <label
+            class="type"
+            for="type-three"
+          >
+            Scotch
+          </label>
+          <input
+            type="radio"
+            id="type-three"
+            name="type"
+            value="scotch"
+          >
+        </div>
+        <div class="form-input">
+          <label
+            class="frequency"
+            for="frequency"
+          >
+            Frequency
+
+          </label>
+        </div>
+        <div class="form-input frequency-pos">
+          <select
+            name="frequency"
+            id="frequency"
+            value="week"
+            type="select"
+            required
+          >
+            <option value="week">Weekly</option>
+            <option value="month">Montly</oprion>
+            <option value="year">Yearly</option>
+          </select>
+        </div>
+        <div class="form-input">
+          <label
+            class="amount"
+            for="amount"
+          >
+            Amount
+
+          </label>
+        </div>
+        <div class="form-input amount-pos">
+          <select
+            name="amount"
+            id="amount"
+            value="one"
+            type="select"
+            required
+          >
+            <option value="one">1</option>
+            <option value="two">2</oprion>
+            <option value="three">3</option>
+            <option value="four">4</option>
+            <option value="five">5</oprion>
+          </select>
+        </div>
+        <div class="order-parent">
+          <button
+            class="order"
+            type="submit"
+          >
+            Subscribe
+          </button>
+        </div>
+      </form>
+    </div>
   </section>
   <footer>
     <article class="foot">

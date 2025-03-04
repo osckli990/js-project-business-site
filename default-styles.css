@@ -249,7 +249,7 @@ input[type=text]:focus {
 }
 
 #frequency {
-  border-color: white;
+  border-color: grey;
   width: 100%;
   appearance: none;
   outline: none;
@@ -259,7 +259,7 @@ input[type=text]:focus {
 }
 
 #amount {
-  border-color: white;
+  border-color: grey;
   outline: none;
   appearance: none;
   width: 35px;
@@ -318,7 +318,7 @@ input[type=text]:focus {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 2fr 1fr repeat(3, 1fr);
   gap: 2.5%;
-  margin: 115px 5% 2% 5%;
+  margin: 115px 5% 8% 5%;
   justify-items: center;
   align-items: center;
   z-index: 2;
@@ -425,6 +425,20 @@ img {
   justify-content: flex-start;
   align-items: flex-start;
   height: 300px;
+}
+
+.dropdown-content-main {
+  display: grid;
+  grid-column: 2;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 0.1fr;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.dropdown-content-main h3 {
+  font-size: 18px;
+  text-align: center;
 }
 
 footer {
