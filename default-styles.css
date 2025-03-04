@@ -231,9 +231,9 @@ input[type=text]:focus {
   text-align: center;
 }
 
-#type-one,
-#type-two,
-#type-three {
+#whisky,
+#bourbon,
+#scotch {
   border-color: white;
 }
 
@@ -393,7 +393,7 @@ img {
 
 /*minimum width to certain images*/
 
-.img-x {
+.img-mark {
   grid-row: span 2;
   max-width: 100%;
   max-height: 100%;
@@ -403,7 +403,7 @@ img {
 
 /*span two rows*/
 
-.keep {
+.solid-background {
   grid-column: span 2;
   display: flex;
   align-items: center;
@@ -413,7 +413,7 @@ img {
   height: 100%;
 }
 
-.img-y {
+.img-glass {
   max-width: 45%;
   max-height: 45%;
 }

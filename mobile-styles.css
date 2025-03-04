@@ -123,11 +123,11 @@
     box-shadow: 0 0 20px white;
   }
 
-  .darkmode .img-x img {
+  .darkmode .img-mark img {
     box-shadow: none;
   }
 
-  .img-x {
+  .img-mark {
     grid-row: span 1;
     max-width: 100%;
     max-height: 100%;
@@ -154,7 +154,7 @@
     height: 100%;
   }
 
-  .keep {
+  .solid-background {
     grid-column: span 1;
     border-radius: 0;
     margin-top: 30px;
