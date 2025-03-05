@@ -223,7 +223,7 @@ input[type=text]:focus {
   grid-column: span 2;
 }
 
-#email {
+#email-input {
   font-size: 16px;
   border-color: white;
   width: 100%;
@@ -248,7 +248,7 @@ input[type=text]:focus {
   grid-column: span 2;
 }
 
-#frequency {
+#frequency-input {
   border-color: grey;
   width: 100%;
   appearance: none;
@@ -258,7 +258,7 @@ input[type=text]:focus {
   text-align: center;
 }
 
-#amount {
+#amount-input {
   border-color: grey;
   outline: none;
   appearance: none;

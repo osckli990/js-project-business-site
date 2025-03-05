@@ -68,9 +68,9 @@
     font-size: 14px;
   }
 
-  #email,
-  #frequency,
-  #amount {
+  #emai-input,
+  #frequency-input,
+  #amount-input {
     font-size: 14px;
     height: 30px;
   }

@@ -9,13 +9,7 @@ if (darkmode === "active") {
 //excecute on click. toggle darkmode. 
 themeSwitch.addEventListener("click", () => {
   document.body.classList.toggle("darkmode");
-
-  if (document.body.classList.contains("darkmode")) {
-    localStorage.setItem("darkmode", "active");
-  }
-  else {
-    localStorage.setItem("darkmode", "inactive");
-  }
+  localStorage.setItem("darkmode", document.body.classList.contains("darkmode") ? "active" : "inactive");
 });
 
 
